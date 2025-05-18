@@ -1,0 +1,118 @@
+.video-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8vh 26px;
+  gap: 20px;
+}
+
+.video-drop-area {
+  position: relative;
+  width: 100%;
+  max-width: 1020px;
+  min-height: 573px;
+  border: 2px dashed #ccc;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.video-drop-area.drag-over {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+.video-element {
+  width: 100%;
+  max-width: 1020px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drop-message {
+  position: absolute;
+  text-align: center;
+  color: #888;
+  pointer-events: none;
+  font-size: 1.1rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.video-controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1022px;
+  padding-top: 20px;
+}
+
+.video-player-layout {
+  padding: 20px;
+  max-width: 1020px;
+  width: 100%;
+}
+
+.video-player-layout--with-video {
+  background-color: #222831;
+}
+
+.lightgrey-text {
+  color: lightgrey;
+}
+
+.volume-control {
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.volume-range {
+  width: 90px;
+  height: 4px;
+  margin-left: 30px;
+  background: #3a3e47;
+  accent-color: #bdbdbd;
+  border-radius: 6px;
+  outline: none;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 3px #bdbdbd44;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+
+.volume-range::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #bdbdbd;
+  border-radius: 6px;
+}
+.volume-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #888;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 0 4px #0002;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: -5px;
+}
+.volume-range:focus::-webkit-slider-thumb {
+  background: #eee;
+}
+
+.start-pause {
+  margin-left: 55px;
+  cursor: pointer;
+}

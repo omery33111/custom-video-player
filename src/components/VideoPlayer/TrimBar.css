@@ -1,0 +1,58 @@
+.trim-bar {
+  width: 100%;
+  max-width: 1020px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-weight: 500;
+  position: relative;
+  margin-top: -120px;
+  border-radius: 6px;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.trim-highlight {
+  position: absolute;
+  height: 100%;
+  background: rgba(255, 221, 51, 0.38);
+  border: 2px solid #FFD700;
+  border-radius: 6px;
+  pointer-events: auto;
+}
+
+.trim-handle {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  cursor: ew-resize;
+  background: rgba(255, 221, 51, 0.95);
+  border: 2px solid #FFD700;
+  pointer-events: auto;
+}
+.trim-handle-left {
+  border-radius: 4px 0 0 4px;
+}
+.trim-handle-right {
+  border-radius: 0 4px 4px 0;
+}
+
+.trim-time-label {
+  position: absolute;
+  top: 100%;
+  color: #333;
+  background: #FFD700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  transform: translateY(4px);
+  white-space: nowrap;
+  pointer-events: none;
+}

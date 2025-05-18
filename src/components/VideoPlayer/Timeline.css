@@ -1,0 +1,31 @@
+.timeline {
+  width: 100%;
+  max-width: 1020px;
+  height: 80px;
+  background-color: #222;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 12px;
+  overflow: visible;
+  margin: 20px 0;
+}
+
+.timeline-progress {
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  transition: width 0.1s linear;
+  background: #ff9900;
+  position: absolute;
+}
+
+.timeline-thumb {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 80px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  pointer-events: none;
+}
